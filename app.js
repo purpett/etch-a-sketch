@@ -37,8 +37,8 @@ function applyColor(e) {
 function makeBox() {
     for (let i = 0; i < gridSize * gridSize; i++) {
         littleBox = document.createElement('div');
-        littleBox.style.width = `${600 / gridSize}px`;
-        littleBox.style.height = `${600 / gridSize}px`; 
+        littleBox.style.width = `${500 / gridSize}px`;
+        littleBox.style.height = `${500 / gridSize}px`; 
         littleBox.style.backgroundColor = "rgb(255, 255, 255)"
         littleBox.addEventListener('mouseenter', applyColor) 
         grid.appendChild(littleBox)   

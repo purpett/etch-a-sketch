@@ -8,27 +8,48 @@
     <body>
         <script src="app.js" defer></script>
 
-        <h1>Etch-A-Sketch</h1>
+        <div class="title">ETCH-A-SKETCH</div>
 
-        <div class="all-buttons">
-            <button class="reset">Reset</button>
+        <div class="content">
 
-            <button class="black">Black</button>
+            <div>
+                <div class="left-side">
+                    <div class="not-buttons">
+                        <div class = "size-bar">
+                            <label for="size">SIZE:</label>
+                            
+                            <div class="slider">
+                                <div class="size-value">16 x 16</div>
+                                <input type="range" id="size" min="1" max="100" value="16">
+                            </div>
+                        </div>
+                        
+                        <div class="color-picker">
+                            <label for="pick">COLOR:</label>
+                            <input type="color" id="pick">
+                        </div>
+                    </div>
 
-            <button class="rainbow">Rainbow</button>
+                    <div class="all-buttons">
+                        
+                        <button class="black">BLACK</button>
 
-            <button class="eraser">Eraser</button>
+                        <button class="rainbow">RAINBOW</button>
 
-            <button class="shadow">Shadow</button>
+                        <button class="shadow">SHADOW</button>
 
-            <label for="pick">Color</label>
-            <input type="color" id="pick">
-            
-            <label for="size">Size</label>
-            <input type="range" id="size" min="1" max="100" value="16">
-            <div class="size-value">16 x 16</div>
+                        <button class="eraser">ERASER</button>
+
+                        <button class="reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid"></div>
         </div>
-
-        <div class="grid"></div>
-    </body>
+        <div class="footer">
+            Made with ♡ by @purpett
+            <a target="_blank" href="https://github.com/purpett"><img class="octocat" src="../rock-paper-scissors-js/images/octocat.svg"></a>
+        </div>
+        </body>
 </html>
